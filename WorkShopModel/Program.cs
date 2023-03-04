@@ -1,9 +1,14 @@
 ﻿Shop onlineShop = new Shop();
 Basket newBasket = new Basket();
+Console.Write("Добрый день, как я могу к Вам обращаться? ");
+string userName = Console.ReadLine();
+User newUser = new User(userName);
+
+Console.WriteLine("Показать каталог продуктов - 1\nПосмотреть содержимое корзины - 2\nДобавить продукт в корзину - 3\nОформить заказ - 4");
 
 while (true)
 {
-    Console.WriteLine("Выберите действие: \nПоказать каталог продуктов - 1\nПосмотреть содержимое корзины - 2\nДобавить продукт в корзину - 3\nОформить заказ - 4");
+    Console.Write("Введите команду для продолжения: ");
     string userAnswer = Console.ReadLine();
     if (userAnswer == "1")
     {
