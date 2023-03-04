@@ -32,7 +32,7 @@ while (true)
                 continue;
             }
 
-            if (int.Parse(userAnswer) > 0 && int.Parse(userAnswer) <= onlineShop.CountItemsInShop())
+            if (int.Parse(userAnswer) > 0 && int.Parse(userAnswer) <= onlineShop.Products.Count())
             {
                 newBasket.Add(onlineShop.Products[int.Parse(userAnswer) - 1]);
             }

@@ -27,10 +27,11 @@
         if (BasketProd.Count == 0) Console.WriteLine("Сейчас Ваша корзина пустует.");
         else
         {
+            Console.WriteLine("Ваша корзина:");
             for (int i = 0; i < BasketProd.Count; i++)
             {
                 {
-                    Console.WriteLine($"{BasketProd[i].Name} {BasketProd[i].Price}");
+                    Console.WriteLine($"{BasketProd[i].Name} {BasketProd[i].Price}р");
                 }
             }
         }

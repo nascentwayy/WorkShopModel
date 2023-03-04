@@ -14,10 +14,6 @@
             new Product("Mail.Ru", 10)
         };
     }
-    public int CountItemsInShop()
-    {
-        return Products.Count;
-    }
 
     public void ShowCatalog()
     {
